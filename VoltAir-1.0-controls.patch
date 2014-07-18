@@ -1,0 +1,12 @@
+diff -urN VoltAir-1.0/VoltAir/inputs/PlayerManager.cpp VoltAir-1.0-patched/VoltAir/inputs/PlayerManager.cpp
+--- VoltAir-1.0/VoltAir/inputs/PlayerManager.cpp	2014-07-17 03:53:20.000000000 +1100
++++ VoltAir-1.0-patched/VoltAir/inputs/PlayerManager.cpp	2014-07-19 01:45:00.621315995 +1100
+@@ -39,7 +39,7 @@
+             KeyScheme({
+                 { KEYCODE_DPAD_LEFT, LEFT },
+                 { KEYCODE_DPAD_RIGHT, RIGHT },
+-                { KEYCODE_DPAD_DOWN, MAGNETIZE },
++                { KEYCODE_SPACE, MAGNETIZE },
+                 { KEYCODE_L, LEFT },
+                 { KEYCODE_APOSTROPHE, RIGHT },
+                 { KEYCODE_SEMICOLON, MAGNETIZE },

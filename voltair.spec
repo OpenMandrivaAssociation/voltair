@@ -3,7 +3,7 @@
 Summary:	A casual single and local multiplayer game
 Name:		voltair
 Version:	1.0
-Release:	3
+Release:	4
 License:	Apache License
 Group:		Games/Adventure
 Url:		http://www.ppsspp.org
@@ -11,6 +11,7 @@ Url:		http://www.ppsspp.org
 Source0:	%{oname}-%{version}.tar.gz
 Source1:	%{name}.png
 Patch0:		VoltAir-1.0-qmake.patch
+Patch1:		VoltAir-1.0-controls.patch
 BuildRequires:	imagemagick
 BuildRequires:	qmake5
 BuildRequires:	liquidfun-devel
@@ -41,6 +42,7 @@ will take him home.
 %prep
 %setup -qn %{oname}-%{version}/%{oname}
 %patch0 -p2
+%patch1 -p2
 
 %build
 %qmake_qt5
