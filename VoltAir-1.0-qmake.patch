@@ -1,0 +1,29 @@
+diff -urN VoltAir-1.0/VoltAir/deployment.pri VoltAir-1.0-patched/VoltAir/deployment.pri
+--- VoltAir-1.0/VoltAir/deployment.pri	2014-07-17 03:53:20.000000000 +1100
++++ VoltAir-1.0-patched/VoltAir/deployment.pri	2014-07-19 00:19:33.380891944 +1100
+@@ -59,11 +59,11 @@
+     !isEmpty(target.path) {
+         installPrefix = $${target.path}
+     } else {
+-        installPrefix = /opt/$${TARGET}
++        installPrefix = /$${TARGET}
+     }
+ 
+     isEmpty(target.path) {
+-        target.path = $${installPrefix}/bin
++        target.path = $${installPrefix}
+         export(target.path)
+     }
+     INSTALLS += target
+diff -urN VoltAir-1.0/VoltAir/Engine/Engine.pri VoltAir-1.0-patched/VoltAir/Engine/Engine.pri
+--- VoltAir-1.0/VoltAir/Engine/Engine.pri	2014-07-17 03:53:20.000000000 +1100
++++ VoltAir-1.0-patched/VoltAir/Engine/Engine.pri	2014-07-18 23:00:15.608398869 +1100
+@@ -186,7 +186,7 @@
+ # For linux-specific statements, there is a slightly more complex predicate.
+ unix:!mac:!android {
+     LIBS += \
+-        $$LIQUIDFUN_DIR/Box2D/Box2D/Release/libliquidfun.a \
++        -lliquidfun -lrt \
+ }
+ 
+ # Have Qt pick up our custom android source
