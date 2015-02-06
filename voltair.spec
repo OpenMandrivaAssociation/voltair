@@ -3,7 +3,7 @@
 Summary:	A casual single and local multiplayer game
 Name:		voltair
 Version:	1.0
-Release:	4
+Release:	5
 License:	Apache License
 Group:		Games/Adventure
 Url:		http://www.ppsspp.org
