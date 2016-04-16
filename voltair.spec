@@ -1,12 +1,12 @@
 %define oname VoltAir
 
 Summary:	A casual single and local multiplayer game
-Name:		voltair
+Name:		  voltair
 Version:	1.0
 Release:	5
 License:	Apache License
 Group:		Games/Adventure
-Url:		http://www.ppsspp.org
+Url:		  http://google.github.io/VoltAir
 # From git by tag https://github.com/google/VoltAir/archive/v%{version}.tar.gz
 Source0:	%{oname}-%{version}.tar.gz
 Source1:	%{name}.png
