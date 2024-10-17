@@ -6,7 +6,7 @@ Version:	1.0
 Release:	5
 License:	Apache License
 Group:		Games/Adventure
-Url:		  http://google.github.io/VoltAir
+Url:		  https://google.github.io/VoltAir
 # From git by tag https://github.com/google/VoltAir/archive/v%{version}.tar.gz
 Source0:	%{oname}-%{version}.tar.gz
 Source1:	%{name}.png
